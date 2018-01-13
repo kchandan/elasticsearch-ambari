@@ -20,6 +20,22 @@
 
 <configuration>
   <property>
+    <name>http_proxy</name>
+    <value></value>
+    <description>HTTP Proxy for your network. If you have no proxy just enter noproxy</description>
+  </property>
+  <property>
+    <name>https_proxy</name>
+    <value></value>
+    <description>HTTPS Proxy for your network. If you have no proxy just enter noproxy</description>
+  </property>
+  <property>
+    <name>elastic_user</name>
+    <value>elasticsearch</value>
+    <property-type>USER</property-type>
+    <description>The user for Elasticsearch</description>
+  </property>
+  <property>
     <name>elastic_user</name>
     <value>elasticsearch</value>
     <property-type>USER</property-type>

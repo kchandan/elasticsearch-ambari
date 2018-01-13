@@ -23,6 +23,7 @@ from resource_management.libraries.script import Script
 # server configurations
 config = Script.get_config()
 
+
 elastic_home = config['configurations']['elastic-sysconfig']['elastic_home']
 data_dir = config['configurations']['elastic-sysconfig']['data_dir']
 work_dir = config['configurations']['elastic-sysconfig']['work_dir']
@@ -30,6 +31,9 @@ conf_dir = config['configurations']['elastic-sysconfig']['conf_dir']
 heap_size = config['configurations']['elastic-sysconfig']['heap_size']
 max_open_files = config['configurations']['elastic-sysconfig']['max_open_files']
 max_map_count = config['configurations']['elastic-sysconfig']['max_map_count']
+
+http_proxy = config['configurations']['elastic-env']['http_proxy']
+https_proxy = config['configurations']['elastic-env']['https_proxy']
 
 elastic_user = config['configurations']['elastic-env']['elastic_user']
 user_group = config['configurations']['elastic-env']['user_group']

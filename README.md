@@ -7,9 +7,9 @@ The Elasticsearch Service for Ambariis a custom service for Ambari that allows y
 This service has been tested with the following:
 
 - CentOS 7.x
-- Ambari 2.4.1.0
-- HDP 2.5.0.0-1245
-- At least 3 data nodes are required*
+- Ambari 2.5
+- HDP/HDF
+
 
 ## Installation
 
@@ -34,9 +34,6 @@ Once the Ambari Server has been restarted, you should see Elasticsearch as an av
 ```
 zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
 ```
-
-## Todo
-- Upgrade Elasticsearch to 5.3.0
 
 
 ## License

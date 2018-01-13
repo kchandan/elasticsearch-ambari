@@ -28,13 +28,14 @@ class Elasticsearch(Script):
         import params
         env.set_params(params)
         print 'Install the Slave'
-        Execute('rpm --import https://packages.elastic.co/GPG-KEY-elasticsearch')
-        Execute("echo \"[elasticsearch-2.x]\n"
-                "name=Elasticsearch repository for 2.x packages\n"
-                "baseurl=https://packages.elastic.co/elasticsearch/2.x/centos\n"
+        Execute(format('export https_proxy={params.https_proxy}; rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch'))
+        Execute(format("echo \"[elasticsearch-2.x]\n"
+                "name=Elasticsearch repository for 6.x packages\n"
+                "baseurl=https://artifacts.elastic.co/packages/6.x/yum\n"
                 "gpgcheck=1\n"
-                "gpgkey=https://packages.elastic.co/GPG-KEY-elasticsearch\n"
-                "enabled=1\" > /etc/yum.repos.d/elasticsearch.repo")
+                "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
+                "proxy={params.http_proxy}\n"
+                "enabled=1\" > /etc/yum.repos.d/elasticsearch.repo"))
         self.install_packages(env)
 
     def configure(self, env, upgrade_type=None, config_dir=None):
