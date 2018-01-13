@@ -9,6 +9,7 @@ This service has been tested with the following:
 - CentOS 7.x
 - Ambari 2.5
 - HDP/HDF
+- ElasticSearch 6.0
 
 
 ## Installation
