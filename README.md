@@ -1,6 +1,6 @@
 ## Elasticsearch Service for Ambari
 
-The Elasticsearch Service for Ambariis a custom service for Ambari that allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks.  Futhermore, this service is intended for testing and development and should not be used in a production environment.
+The Elasticsearch Service for Ambariis a custom service for Ambari that allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks. 
 
 ## Compatibility
 
