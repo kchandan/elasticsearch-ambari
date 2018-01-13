@@ -35,7 +35,9 @@ Once the Ambari Server has been restarted, you should see Elasticsearch as an av
 ```
 zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
 ```
+## Issues
 
+If you find any issues please report issue.
 
 ## License
 This project is based on Elasticsearch Ambari Service of <https://github.com/apache/incubator-metron/tree/master/metron-deployment/packaging/ambari/metron-mpack/src/main/resources/common-services/ELASTICSEARCH>
