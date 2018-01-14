@@ -21,7 +21,7 @@
         <service>
             <name>AMBARI_ELASTICSEARCH</name>
             <displayName>Elasticsearch</displayName>
-            <comment>Indexing and Search</comment>
+            <comment>Elasticsearch is a search engine based on Lucene. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents</comment>
             <version>6.0</version>
             <components>
                 <component>
