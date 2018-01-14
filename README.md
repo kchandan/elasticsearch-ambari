@@ -1,6 +1,6 @@
 ## Elasticsearch Service for Ambari
 
-The Elasticsearch Service for Ambariis a custom service for Ambari that allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks.  Futhermore, this service is intended for testing and development and should not be used in a production environment.
+The Elasticsearch Service for Ambariis a custom service for Ambari that allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks. 
 
 ## Compatibility
 
@@ -9,6 +9,7 @@ This service has been tested with the following:
 - CentOS 7.x
 - Ambari 2.5
 - HDP/HDF
+- ElasticSearch 6.0
 
 
 ## Installation
@@ -34,7 +35,9 @@ Once the Ambari Server has been restarted, you should see Elasticsearch as an av
 ```
 zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
 ```
+## Issues
 
+If you find any issues please report issue.
 
 ## License
 This project is based on Elasticsearch Ambari Service of <https://github.com/apache/incubator-metron/tree/master/metron-deployment/packaging/ambari/metron-mpack/src/main/resources/common-services/ELASTICSEARCH>
