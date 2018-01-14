@@ -1,15 +1,15 @@
 ## Elasticsearch Service for Ambari
 
-The Elasticsearch Service for Ambariis a custom service for Ambari that allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks. 
+The Elasticsearch Service for Ambari stack custom service. which allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks. 
 
 ## Compatibility
 
 This service has been tested with the following:
 
 - CentOS 7.x
-- Ambari 2.5
-- HDP/HDF
-- ElasticSearch 6.0
+- Ambari 2.5,2.6
+- HDP/HDF 2.x/3.x
+- ElasticSearch 6.x
 
 
 ## Installation
@@ -35,6 +35,15 @@ Once the Ambari Server has been restarted, you should see Elasticsearch as an av
 ```
 zen_discovery_ping_unicast_hosts - FQDN of master and data nodes. seperated by comma eg. master.internal,data1.internal,data2.internal
 ```
+
+## Local Dev Setup
+
+vagrant up
+
+You can access Ambari on http://localhost:8080
+
+User/Pass: admin/admin
+
 ## Issues
 
 If you find any issues please report issue.
