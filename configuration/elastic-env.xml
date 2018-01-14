@@ -21,12 +21,12 @@
 <configuration>
   <property>
     <name>http_proxy</name>
-    <value></value>
+    <value>no_proxy</value>
     <description>HTTP Proxy for your network. If you have no proxy just enter noproxy</description>
   </property>
   <property>
     <name>https_proxy</name>
-    <value></value>
+    <value>no_proxy</value>
     <description>HTTPS Proxy for your network. If you have no proxy just enter noproxy</description>
   </property>
   <property>

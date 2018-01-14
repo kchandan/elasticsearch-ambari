@@ -29,13 +29,13 @@ class Elasticsearch(Script):
         env.set_params(params)
 
         print 'Install the Master'
-        Execute(format('export https_proxy={params.https_proxy}; rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch'))
+        
+        Execute(format('rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch'))
         Execute(format("echo \"[elasticsearch-2.x]\n"
                 "name=Elasticsearch repository for 6.x packages\n"
                 "baseurl=https://artifacts.elastic.co/packages/6.x/yum\n"
                 "gpgcheck=1\n"
                 "gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch\n"
-                "proxy={params.http_proxy}\n"
                 "enabled=1\" > /etc/yum.repos.d/elasticsearch.repo"))
 
         self.install_packages(env)
