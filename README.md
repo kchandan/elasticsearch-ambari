@@ -2,7 +2,7 @@
 
 The Elasticsearch Service for Ambari stack custom service. which allows you to install and manage Elasticsearch via Ambari.  This service is not supported by Hortonworks. 
 
-https://www.becloudready.com/forum/articles-1/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
+https://www.becloudready.com/forum/resources/writing-custom-ambari-service-for-hadoop-hdp-or-hdf-cluster
 
 ## Compatibility
 
